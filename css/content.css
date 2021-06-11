@@ -1,0 +1,328 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.aboutus__wrapper{
+    width:100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+    padding:150px 10px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutus__wrapper::before{
+    content: 'RUSGEO';
+    font-size: 10rem;
+    color: #F0F0F0;
+    position: absolute;
+    left:-170px;
+    bottom: 5px;
+    z-index: -1;
+}
+.aboutus__wrapper::after{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: calc(100% - 54%);
+    z-index: 0;
+
+    background:#FFFFFF;
+    display: block;
+    width:60px;
+    height: 60px;
+    transform: rotate(45deg);
+
+}
+.aboutus__text{
+    max-width:850px;
+    text-align: justify;
+    padding-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.aboutus__text h1{
+    color:black;
+    font-size: 1.5rem;
+}
+.aboutus__text p{
+    /* text-indent: 1.5rem; */
+    word-spacing: 5px;
+    padding:15px;
+    font-size: .75rem;
+    text-align: center;
+}
+
+/* +++++++++++++++++++++++++++ */
+.homepage{
+    width:100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 150px 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #F0F0F0;
+    position: relative;
+    z-index: 1;
+}
+.homepage::before{
+    content: 'RUSGEO';
+    font-size: 10rem;
+    color: #FFF;
+    position: absolute;
+    right:0;
+    z-index: -1;
+}
+.homepage::after{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: calc(100% - 54%);
+    z-index: 0;
+
+    background: #F0F0F0;
+    display: block;
+    width:60px;
+    height: 60px;
+    transform: rotate(45deg);
+
+}
+.rubric h1{
+    font-size: 1.5rem;
+}
+.information{
+    width:100%;
+    max-width: 950px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.removeHeight{
+    height:0%;
+}
+.asidebar{
+    width:100%;
+    max-width: 900px;
+    padding: 50px 0px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.asidebar p{
+    padding:5px 10px;
+    
+    text-indent: 0px;
+    color:#151515;
+    
+    font-size:.75rem;
+    border-right: solid 1px black;
+    position: relative;
+    z-index: 1;
+}
+.hydrometeo p{
+    border-right: none;
+}
+.animation__block{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.animation__block:hover p{
+    background: rgba(0, 0, 0, .5);
+    color:#F0F0F0;
+    transition: all .3s linear;
+    
+}
+.info_inner{
+    width:100%;
+    max-width: 1000px;
+    /* height:100%; */
+    margin:0 auto;
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+}
+.info_inner img{
+    width:100%;
+}
+
+.info_inner p{
+    color:#151515;
+    /* font-family: 'Russo One', sans-serif; */
+    font-size:.75rem;
+    text-align: justify;
+    text-indent: 1.5em;
+    margin:5px 0;
+}
+.text__hover__wrapper{
+    opacity:0;
+    /* transform: translateX(1440px); */
+}
+.text_hover_start p{
+    text-align: center;
+    font-size:1rem;
+    margin-bottom: 20px;
+}
+.blocks__show{
+    opacity:1;
+    /* transform: translateX(0px); */
+    transition: .7s linear;
+}
+.text_hover_show ul, li{
+    font-size:.75rem;
+    margin: 10px 0;
+}
+.text_hover_show span{
+    font-size:.75rem;
+}
+.text_hover_show p{
+    font-size:.75rem;
+}
+/* Contacts */
+/* #main_content__contacts{
+    width: 100%;
+    max-width:1440px;
+    background: #fdfaf6;
+    margin: 0 auto;
+} */
+.content__contacts__wrapper::before{
+    content: 'RUSGEO';
+    font-size: 10rem;
+    color: #F0F0F0;
+    position: absolute;
+    left:-120px;
+    z-index: -1;
+}
+.content__contacts__wrapper{
+    width: 100%;
+    max-width:1000px;
+
+    margin: 0 auto;
+    padding: 100px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+.contact__rubric h1{
+    font-size: 1.5rem;
+}
+.contact__content{
+    width: 100%;
+    max-width:1000px;
+
+    margin: 0 auto;
+    padding: 50px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.work__clock{
+    display: flex;
+}
+.contacts__info__text h1{
+    font-size: 1.5rem;
+    padding:5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.contacts__info__text p{
+    font-size: .75rem;
+    padding:5px;
+}
+.contacts__telefon p{
+    font-size: .75rem;
+}
+
+.contacts__info__text a{
+    font-size: .75rem;
+    padding: 5px;
+    color:#151515;
+}
+
+.contacts__googlmap{
+    width:100%;
+    max-width:620px;
+    padding: 10px 0;
+    display:flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+} 
+.contacts__googlmap p{
+    font-size: .75rem;
+    margin:10px;
+    padding:5px;
+    text-align: center;
+    /* border-top: 1px solid #05445E; */
+    /* border-bottom: 1px solid #05445E; */
+}
+.contacts__googlmap iframe{
+    padding: 0;
+    margin: 0;
+    width:30rem; 
+    height:20rem; 
+}
+.contcts__email a{
+    font-size: .85rem;
+    padding:5px;
+    transition: all .5s linear;
+    /* border-bottom:1px solid #05445E; */
+}
+.contcts__email:hover a{
+    background: rgba(0, 0, 0, .5);
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+@media all and (max-width: 420px){
+    .contacts__googlmap{
+        padding-top:35px;
+    }
+    .aboutus__wrapper{
+        padding: 50px 5px;
+    }
+    .aboutus__wrapper::after{
+        left:calc(100% - 58%);
+    }
+    .homepage{
+        padding: 65px 5px;
+    }
+    .homepage::after{
+        left:calc(100% - 58%);
+    }
+    .asidebar{
+        padding: 10px 5px;
+    }
+    .asidebar p{
+        border-right:none;
+        border-bottom: 1px solid black;
+    }
+}
